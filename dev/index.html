@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-ico" href="/dev/favicon.ico">
+    <title>Wallet</title>
+    
+    <!-- <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <script src="../bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./myStylesheet.css"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body class="main">
+    <br/>
+    <br/>
+    <br/>
+    <div class="container">
+        
+        <header id="header1">
+            <br/>
+            <svg style="align-items: center"; xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+                <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+            </svg>
+            Wallet</header>
+        <header id="header2">Welcome to your Wallet</header>
+        <br/>
+        <br/>
+        <br/>
+        <form action="/wallet" method="POST" id="form1">
+            <div class="form-group row">
+                <label for="amountToSend" class="col-sm-2 col-form-label">Amount</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" name="amount" placeholder="Enter Amount" required>
+                </div>
+            </div>
+            <div class="form-group row">
+              <label for="senderAddress" class="col-sm-2 col-form-label">Sender Address</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="senderAddress" placeholder="Enter Sender Address" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="receiverAddress" class="col-sm-2 col-form-label">Receiver Address</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="recipientAddress" placeholder="Enter Receiver Address" required>
+              </div>
+            </div>
+            <div class="form-group row">
+                <label for="feesToSend" class="col-sm-2 col-form-label">Fees</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" name="fees" placeholder="Enter Fees" required>
+                </div>
+            </div>
+            <br/>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary" id="button1">Transfer Amount</button>
+              </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <hr/>
+            <div class="form-group row">
+                <div class="col-sm-2">
+                  <button type="submit" class="btn btn-primary" id="button1"><a href="blockchain" id="button2" >
+                      View Blockchain</a></button>
+                </div>
+                <div class="col-sm-6">
+                    <button type="submit" class="btn btn-primary" id="button1"><a href="mine" id="button2" >
+                        Mine new Block</a></button>
+                  </div>
+            </div>
+          </form>
+
+    </div>
+    <div>
+        <p id="endTag">--> created by @hamza <-- </p>
+    </div>
+</body>
+</html>
+
+
+<style>
+
+    body.main {
+        background-color: #101820FF;
+    }
+
+    div.container {
+        background-color: #F2AA4CFF;
+        width: 960px;
+        height: 80vh;
+        border-radius: 20px;
+    }
+
+    #header1 {
+        color: #101820FF;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: cursive;
+    }
+
+    #header2 {
+        color: #101820FF;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Brush Script MT', cursive;
+    }
+
+    #form1 {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    #button1 {
+        color: #F2AA4CFF;
+        background-color: #101820FF;
+        border-color: #F2AA4CFF;
+    }
+
+    #button2 {
+        color: #F2AA4CFF;
+    }
+
+    hr{
+        height: 2px;
+        background-color: #101820FF;
+        border: none;
+    }
+
+    #endTag {
+        color:#F2AA4CFF;
+        font-size: medium;
+        font-weight: bold; 
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+</style>
